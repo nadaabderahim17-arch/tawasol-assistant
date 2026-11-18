@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TAWASOL Assistant</title>
-
   <style>
     * {
       box-sizing: border-box;
@@ -64,17 +63,12 @@
 
 <body>
   <main class="container">
-
     <header class="header">
       <h1>TAWASOL | تواصل</h1>
-      <p>
-        Your AI-powered guide to Egyptian Sign Language
-        and accessible communication.
-      </p>
+      <p>Your AI-powered guide to Egyptian Sign Language and accessible communication.</p>
     </header>
 
     <div id="voiceflow-chat"></div>
-
   </main>
 
   <script type="text/javascript">
@@ -87,7 +81,6 @@
           verify: {
             projectID: '6afdc7ffccead82d6db90ebc'
           },
-          
           url: 'https://general-runtime.voiceflow.com',
           voice: {
             url: 'https://runtime-api.voiceflow.com'
@@ -95,13 +88,13 @@
           render: {
             mode: 'embedded',
             target: document.getElementById('voiceflow-chat')
-           });
+          }
+        });
       };
 
       v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
       v.type = 'text/javascript';
       s.parentNode.insertBefore(v, s);
-
     })(document, 'script');
   </script>
 </body>
